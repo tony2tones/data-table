@@ -13,11 +13,13 @@ export default function DataTable({ data, columns }: DataTableProps) {
     <div className="overflow-x-auto">
       <table className="min-w-full border-collapse border border-gray-200">
         <thead>
-          {columns.map(column => (
-            <tr className="bg-gray-100" key={column.key}>
-              <th className="border p-2">{column.header}</th>
-            </tr>
-          ))}
+          <tr className="bg-gray-100">
+            {columns.map(column => (
+              <th className="border p-2" key={column.key}>
+                {column.header}
+              </th>
+            ))}
+          </tr>
         </thead>
         <tbody>
           {data.map(row => (
