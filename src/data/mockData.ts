@@ -1,3 +1,9 @@
+export type Employee = {
+  id:number;
+  name:string;
+  email:string;
+  role:string;
+}
 export const columnData = [
   { key: 'id', header: 'ID' },
   { key: 'name', header: 'Name' },
